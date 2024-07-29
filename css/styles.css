@@ -24,7 +24,7 @@ body {
     text-align: center;
     margin-bottom: 20px; 
 }
-#about p {
+#about, #about-en p {
     text-align: justify; 
     margin-top: 20px; 
     line-height: 1.6; 
@@ -178,6 +178,7 @@ section li {
 .skills-item {
     width: 30%;
     text-align: center;
+   
 }
 
 .skills-item h3 {
@@ -190,18 +191,17 @@ section li {
 }
 
 .skills-item h3 i {
-    margin-right: 10px; 
+    margin-right: 8px; 
     font-size: 1.5rem;  
-
+   
 }
 
 .skills-item p {
     margin: 0;
     padding: 5px 0;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
-/* responsive design */
 @media (max-width: 768px) {
     .skills-info {
         flex-direction: column;
@@ -210,7 +210,13 @@ section li {
 
     .skills-item {
         width: 100%;
+        margin-bottom: 20px;
     }
+
+    .skills-item p {
+        font-size: 0.9rem; 
+    }
+
     .project-item {
         width: 100%;
     }
@@ -223,6 +229,20 @@ section li {
     .contact-item {
         width: 100%; 
         max-width: none; 
+    }
+}
+
+@media (max-width: 480px) { 
+    .skills-item h3 {
+        font-size: 1.2rem; 
+    }
+
+    .skills-item h3 i {
+        font-size: 1.2rem; 
+    }
+
+    .skills-item p {
+        font-size: 1rem; 
     }
 }
 

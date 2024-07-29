@@ -220,16 +220,6 @@ section li {
     .project-item {
         width: 100%;
     }
-
-    .contact-info {
-        flex-direction: column; 
-        align-items: center; 
-    }
-
-    .contact-item {
-        width: 100%; 
-        max-width: none; 
-    }
 }
 
 @media (max-width: 480px) { 
@@ -325,7 +315,6 @@ section li {
 .contact-info {
     display: flex;
     justify-content: space-between;
-
     flex-wrap: wrap; 
 }
 
@@ -335,7 +324,7 @@ section li {
     align-items: center;
     text-align: center;
     margin-bottom: 10px;
-    width: 33%; 
+    width: 100%; 
     padding: 0 15px; 
     box-sizing: border-box; 
 }
@@ -367,6 +356,16 @@ section li {
 .contact-item {
     width: 80%; 
     max-width: none; 
+}
+
+@media (min-width: 768px) {
+    .contact-item {
+        width: 33%; 
+    }
+
+    .contact-info {
+        flex-direction: row; 
+    }
 }
 
 a, a:visited {

@@ -19,12 +19,16 @@ body {
     padding: 20px;
 }
 
-.about-center, #about-en{
+.about-center, #about, #about-en{
     flex: 1;
     text-align: center;
     margin-bottom: 20px; 
 }
-   
+#about p {
+    text-align: justify; 
+    margin-top: 20px; 
+    line-height: 1.6; 
+}
 
 header {
     background-color: #333;
@@ -58,17 +62,6 @@ header p {
     height: 100%; 
     object-fit: cover; 
 }
-/*
-.container {
-    overflow: hidden; 
-}
-
-.container p {
-    margin-top: 0; 
-}
-*/
-
-
 
 .cta-container {
     margin-top: 20px;
@@ -127,6 +120,7 @@ section li {
 .education-info {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
    
 }
 
@@ -153,6 +147,20 @@ section li {
     line-height: 1.6;
 }
 
+@media (max-width: 768px) {
+    .education-item {
+        width: calc(50% - 20px); 
+        margin: 10px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .education-item {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+}
+
 
 #skills,
 #skills-en {
@@ -164,6 +172,7 @@ section li {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .skills-item {
@@ -196,6 +205,7 @@ section li {
 @media (max-width: 768px) {
     .skills-info {
         flex-direction: column;
+        align-items: center;
     }
 
     .skills-item {
@@ -271,6 +281,22 @@ section li {
     color: inherit;
 }
 
+@media (max-width: 768px) {
+    .project-item {
+        width: calc(100% - 20px); 
+        margin-bottom: 20px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .project-item img {
+        height: auto; 
+    }
+
+    .project-item {
+        padding: 10px; 
+    }
+}
 
 #contact,
 #contact-en{
